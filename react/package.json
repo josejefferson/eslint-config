@@ -1,0 +1,25 @@
+{
+  "name": "@josejefferson/eslint-config-react",
+  "version": "1.0.0",
+  "description": "Custom ESLint configuration for React projects",
+  "license": "MIT",
+  "main": "eslint.config.js",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": {
+    "name": "Jefferson Dantas",
+    "url": "https://github.com/josejefferson"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.19.0",
+    "@typescript-eslint/parser": "^8.19.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.37.3",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  }
+}
