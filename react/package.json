@@ -1,6 +1,6 @@
 {
   "name": "@josejefferson/eslint-config-react",
-  "version": "1.1.0-beta",
+  "version": "1.1.0",
   "description": "Custom ESLint configuration for React projects",
   "license": "MIT",
   "main": "eslint.config.js",
