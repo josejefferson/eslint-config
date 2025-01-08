@@ -1,0 +1,32 @@
+{
+  "name": "@josejefferson/eslint-config-solid",
+  "version": "1.0.0",
+  "description": "Custom ESLint configuration for SolidJS projects",
+  "license": "MIT",
+  "main": "eslint.config.js",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josejefferson/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/josejefferson/eslint-config/issues"
+  },
+  "homepage": "https://github.com/josejefferson/eslint-config",
+  "author": {
+    "name": "Jefferson Dantas",
+    "url": "https://github.com/josejefferson"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.19.0",
+    "@typescript-eslint/parser": "^8.19.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-solid": "^0.14.5",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  }
+}
