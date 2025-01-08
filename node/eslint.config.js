@@ -30,7 +30,7 @@ module.exports = {
     'logical-assignment-operators': 'warn',
 
     // Require constructor names to begin with a capital letter
-    'new-cap': ['warn', { capIsNew: false }],
+    'new-cap': ['warn', { capIsNew: false, properties: false }],
 
     // Disallow the use of console
     'no-console': ['warn', { allow: ['warn', 'error', 'clear'] }],
