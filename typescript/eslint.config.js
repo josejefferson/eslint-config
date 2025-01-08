@@ -103,8 +103,8 @@ module.exports = {
     // Disallow @ts-<directive> comments or require descriptions after directives
     '@typescript-eslint/ban-ts-comment': 'off',
 
-    // Disallow the declaration of empty interfaces
-    '@typescript-eslint/no-empty-interface': 'off',
+    // Disallow accidentally using the "empty object" type
+    '@typescript-eslint/no-empty-object-type': ['error', { allowInterfaces: 'with-single-extends' }],
 
     // Disallow the any type
     '@typescript-eslint/no-explicit-any': 'off',

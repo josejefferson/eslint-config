@@ -1,6 +1,6 @@
 {
   "name": "@josejefferson/eslint-config-typescript",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Custom ESLint configuration for Node.js + TypeScript projects",
   "license": "MIT",
   "main": "eslint.config.js",
