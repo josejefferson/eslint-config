@@ -32,7 +32,7 @@ module.exports = {
     'logical-assignment-operators': 'warn',
 
     // Require constructor names to begin with a capital letter
-    'new-cap': ['warn', { capIsNew: false }],
+    'new-cap': ['warn', { capIsNew: false, properties: false }],
 
     // Disallow the use of console
     'no-console': ['warn', { allow: ['warn', 'error', 'clear'] }],
@@ -146,6 +146,9 @@ module.exports = {
     '@typescript-eslint/require-await': 'off',
 
     // Enforce template literal expressions to be of string type
-    '@typescript-eslint/restrict-template-expressions': 'off'
+    '@typescript-eslint/restrict-template-expressions': 'off',
+
+    // Enforce unbound methods are called with their expected scope
+    '@typescript-eslint/unbound-method': 'off'
   }
 }
