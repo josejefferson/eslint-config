@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['plugin:react/recommended', 'plugin:react-hooks/recommended'],
+  extends: ['plugin:react/recommended'],
   settings: { react: { version: 'detect' } },
   rules: {
     /*
@@ -52,6 +52,9 @@ module.exports = {
 
     // Enforce stateless components to be written as a pure function
     'react/prefer-stateless-function': ['warn'],
+
+    // Disallow missing props validation in a React component definition
+    'react/prop-types': ['off'],
 
     // Disallow missing React when using JSX
     'react/react-in-jsx-scope': ['off'],
