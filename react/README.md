@@ -45,6 +45,8 @@ yarn add -D eslint-config-next
 bun add -D eslint-config-next
 ```
 
+`.eslintrc.json`
+
 ```json
 {
   "extends": ["next", "@josejefferson/eslint-config-typescript", "@josejefferson/eslint-config-react"]
