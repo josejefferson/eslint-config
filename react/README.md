@@ -52,3 +52,19 @@ bun add -D eslint-config-next
   "extends": ["next", "@josejefferson/eslint-config-typescript", "@josejefferson/eslint-config-react"]
 }
 ```
+
+### With Vite
+
+```json
+{
+  "extends": [
+    "plugin:react-hooks/recommended",
+    "@josejefferson/eslint-config-typescript",
+    "@josejefferson/eslint-config-react"
+  ],
+  "ignorePatterns": ["vite.config.ts"],
+  "parserOptions": {
+    "project": "./tsconfig.app.json"
+  }
+}
+```
