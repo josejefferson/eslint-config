@@ -1,6 +1,7 @@
 module.exports = {
   extends: ['eslint:recommended', 'prettier'],
-  parserOptions: { project: true },
+  env: { node: true, commonjs: true, es6: true },
+  parserOptions: { sourceType: 'module' },
   rules: {
     /*
       ╔═╗╔═╗╦  ╦╔╗╔╔╦╗
@@ -64,6 +65,9 @@ module.exports = {
 
     // Disallow unused expressions
     'no-unused-expressions': 'warn',
+
+    // Disallow unused variables
+    'no-unused-vars': 'off',
 
     // Disallow unnecessary computed property keys in objects and classes
     'no-useless-computed-key': 'warn',

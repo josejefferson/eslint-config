@@ -1,6 +1,6 @@
 {
   "name": "@josejefferson/eslint-config-node",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Custom ESLint configuration for Node.js projects",
   "license": "MIT",
   "main": "eslint.config.js",
