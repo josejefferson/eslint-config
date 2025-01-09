@@ -1,6 +1,6 @@
 {
   "name": "@josejefferson/eslint-config-typescript",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Custom ESLint configuration for Node.js + TypeScript projects",
   "license": "MIT",
   "main": "eslint.config.js",
@@ -21,11 +21,10 @@
     "url": "https://github.com/josejefferson"
   },
   "dependencies": {
+    "@josejefferson/eslint-config-node": "^1.0",
     "@typescript-eslint/eslint-plugin": "^8.19.0",
     "@typescript-eslint/parser": "^8.19.0",
     "eslint": "^8.57.1",
-    "eslint-config-prettier": "^9.1.0",
-    "prettier": "^3.4.2",
     "typescript": "^5.7.2"
   }
 }

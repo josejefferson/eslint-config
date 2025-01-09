@@ -1,99 +1,9 @@
 module.exports = {
-  extends: ['eslint:recommended', 'prettier', 'plugin:@typescript-eslint/recommended-type-checked'],
+  extends: ['@josejefferson/eslint-config-node', 'plugin:@typescript-eslint/recommended-type-checked'],
   plugins: ['@typescript-eslint'],
   parser: '@typescript-eslint/parser',
   parserOptions: { project: true },
   rules: {
-    /*
-      ╔═╗╔═╗╦  ╦╔╗╔╔╦╗
-      ║╣ ╚═╗║  ║║║║ ║ 
-      ╚═╝╚═╝╩═╝╩╝╚╝ ╩ 
-    */
-
-    // Enforce return statements in callbacks of array methods
-    'array-callback-return': 'warn',
-
-    // Enforce the use of variables within the scope they are defined
-    'block-scoped-var': 'warn',
-
-    // Enforce camelcase naming convention
-    camelcase: ['warn', { properties: 'never' }],
-
-    // Enforce dot notation whenever possible
-    'dot-notation': 'warn',
-
-    // Require the use of === and !==
-    eqeqeq: 'warn',
-
-    // Require function names to match the name of the variable or property to which they are assigned
-    'func-name-matching': 'warn',
-
-    // Require or disallow logical assignment operator shorthand
-    'logical-assignment-operators': 'warn',
-
-    // Require constructor names to begin with a capital letter
-    'new-cap': ['warn', { capIsNew: false, properties: false }],
-
-    // Disallow the use of console
-    'no-console': ['warn', { allow: ['warn', 'error', 'clear'] }],
-
-    // Disallow empty character classes in regular expressions
-    'no-empty': ['warn', { allowEmptyCatch: true }],
-
-    // Disallow the use of eval()
-    'no-eval': 'error',
-
-    // Disallow unnecessary calls to .bind()
-    'no-extra-bind': 'warn',
-
-    // Disallow the use of eval()-like methods
-    'no-implied-eval': 'error',
-
-    // Disallow variable or function declarations in nested blocks
-    'no-inner-declarations': 'off',
-
-    // Disallow if statements as the only statement in else blocks
-    'no-lonely-if': 'warn',
-
-    // Disallow comparisons where both sides are exactly the same
-    'no-self-compare': 'warn',
-
-    // Disallow initializing variables to undefined
-    'no-undef-init': 'warn',
-
-    // Disallow ternary operators when simpler alternatives exist
-    'no-unneeded-ternary': 'warn',
-
-    // Disallow unused expressions
-    'no-unused-expressions': 'warn',
-
-    // Disallow unnecessary computed property keys in objects and classes
-    'no-useless-computed-key': 'warn',
-
-    // Disallow redundant return statements
-    'no-useless-return': 'warn',
-
-    // Require let or const instead of var
-    'no-var': 'warn',
-
-    // Require or disallow method and property shorthand syntax for object literals
-    'object-shorthand': 'warn',
-
-    // Require using arrow functions for callbacks
-    'prefer-arrow-callback': 'warn',
-
-    // Require const declarations for variables that are never reassigned after declared
-    'prefer-const': ['warn', { destructuring: 'all' }],
-
-    // Require rest parameters instead of arguments
-    'prefer-rest-params': 'warn',
-
-    // Enforce the consistent use of the radix argument when using parseInt()
-    radix: 'error',
-
-    // Disallow async functions which have no await expression
-    'require-await': 'off',
-
     /*
       ╔╦╗╦ ╦╔═╗╔═╗╔═╗╔═╗╦═╗╦╔═╗╔╦╗
        ║ ╚╦╝╠═╝║╣ ╚═╗║  ╠╦╝║╠═╝ ║ 
@@ -112,14 +22,20 @@ module.exports = {
     // Disallow Promises in places not designed to handle them
     '@typescript-eslint/no-misused-promises': 'off',
 
+    // Disallow TypeScript namespaces
+    '@typescript-eslint/no-namespace': 'off',
+
     // Disallow non-null assertions after an optional chain expression
     '@typescript-eslint/no-non-null-asserted-optional-chain': 'off',
 
     // Disallow non-null assertions using the ! postfix operator
     '@typescript-eslint/no-non-null-assertion': 'off',
 
+    // Disallow aliasing this
+    '@typescript-eslint/no-this-alias': 'off',
+
     // Disallow type assertions that do not change the type of an expression
-    '@typescript-eslint/no-unnecessary-type-assertion': ['warn', { typesToIgnore: ['AulaID'] }],
+    '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
 
     // Disallow calling a function with a value with type any
     '@typescript-eslint/no-unsafe-argument': 'off',
