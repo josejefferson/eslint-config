@@ -1,4 +1,4 @@
 module.exports = {
-  extends: ['plugin:solid/typescript'],
+  extends: ['@josejefferson/eslint-config-typescript', 'plugin:solid/typescript'],
   plugins: ['solid']
 }
