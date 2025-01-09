@@ -28,9 +28,9 @@ bun add -D @josejefferson/eslint-config-typescript @josejefferson/eslint-config-
 ```json
 {
   "extends": [
+    "plugin:react-hooks/recommended",
     "@josejefferson/eslint-config-typescript",
-    "@josejefferson/eslint-config-react",
-    "plugin:react-hooks/recommended"
+    "@josejefferson/eslint-config-react"
   ]
 }
 ```

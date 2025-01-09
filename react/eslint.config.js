@@ -1,6 +1,7 @@
 module.exports = {
-  extends: ['plugin:react/recommended'],
+  extends: ['@josejefferson/eslint-config-node', 'plugin:react/recommended'],
   settings: { react: { version: 'detect' } },
+  env: { browser: true },
   rules: {
     /*
       ╦═╗╔═╗╔═╗╔═╗╔╦╗
