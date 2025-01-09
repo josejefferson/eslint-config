@@ -29,11 +29,14 @@ bun add -D @josejefferson/eslint-config-typescript @josejefferson/eslint-config-
 {
   "extends": [
     "plugin:react-hooks/recommended",
-    "@josejefferson/eslint-config-typescript",
-    "@josejefferson/eslint-config-react"
+    "@josejefferson/eslint-config-react",
+    "@josejefferson/eslint-config-typescript"
   ]
 }
 ```
+
+> [!WARNING]
+> The TypeScript configuration must come after the React configuration in the `extends` array.
 
 ### With Next.js
 
@@ -49,7 +52,7 @@ bun add -D eslint-config-next
 
 ```json
 {
-  "extends": ["next", "@josejefferson/eslint-config-typescript", "@josejefferson/eslint-config-react"]
+  "extends": ["next", "@josejefferson/eslint-config-react", "@josejefferson/eslint-config-typescript"]
 }
 ```
 
@@ -59,8 +62,8 @@ bun add -D eslint-config-next
 {
   "extends": [
     "plugin:react-hooks/recommended",
-    "@josejefferson/eslint-config-typescript",
-    "@josejefferson/eslint-config-react"
+    "@josejefferson/eslint-config-react",
+    "@josejefferson/eslint-config-typescript"
   ],
   "ignorePatterns": ["vite.config.ts"],
   "parserOptions": {
