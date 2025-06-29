@@ -1,7 +1,7 @@
 {
-  "name": "@josejefferson/eslint-config-typescript",
+  "name": "@josejefferson/eslint-config-next",
   "version": "2.0.1",
-  "description": "Custom ESLint configuration for Node.js + TypeScript projects",
+  "description": "Custom ESLint configuration for Next.js projects",
   "license": "MIT",
   "main": "./eslint.config.cjs",
   "types": "./index.d.ts",
@@ -22,12 +22,12 @@
     "url": "https://github.com/josejefferson"
   },
   "peerDependencies": {
-    "eslint": ">=9.22.0",
-    "typescript": ">=5"
+    "eslint": ">=9.22.0"
   },
   "dependencies": {
-    "@josejefferson/eslint-config-node": "^2.0.1",
-    "typescript-eslint": "^8.35.0"
+    "@josejefferson/eslint-config-react": "^2.0.1",
+    "@josejefferson/eslint-config-typescript": "^2.0.1",
+    "@next/eslint-plugin-next": "^15.3.4"
   },
   "devDependencies": {
     "prettier": "^3.6.2"

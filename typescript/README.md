@@ -9,19 +9,22 @@ This package provides ESLint configuration for TypeScript projects.
 ## Installation
 
 ```fish
-npm install -D @josejefferson/eslint-config-typescript
+npm install -D eslint @josejefferson/eslint-config-typescript
 
-yarn add -D @josejefferson/eslint-config-typescript
+yarn add -D eslint @josejefferson/eslint-config-typescript
 
-bun add -D @josejefferson/eslint-config-typescript
+bun add -D eslint @josejefferson/eslint-config-typescript
 ```
 
 ## Usage
 
-`.eslintrc.json`
+`eslint.config.mjs`
 
-```json
-{
-  "extends": ["@josejefferson/eslint-config-typescript"]
-}
+```js
+import eslintConfigTypescript from '@josejefferson/eslint-config-typescript'
+import { defineConfig } from 'eslint/config'
+
+export default defineConfig([
+  eslintConfigTypescript
+])
 ```

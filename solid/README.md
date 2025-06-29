@@ -9,31 +9,22 @@ This package provides ESLint configuration for SolidJS projects.
 ## Installation
 
 ```fish
-npm install -D @josejefferson/eslint-config-solid
+npm install -D eslint @josejefferson/eslint-config-solid
 
-yarn add -D @josejefferson/eslint-config-solid
+yarn add -D eslint @josejefferson/eslint-config-solid
 
-bun add -D @josejefferson/eslint-config-solid
+bun add -D eslint @josejefferson/eslint-config-solid
 ```
 
 ## Usage
 
-`.eslintrc.json`
+`eslint.config.mjs`
 
-```json
-{
-  "extends": ["@josejefferson/eslint-config-solid"]
-}
-```
+```js
+import eslintConfigSolid from '@josejefferson/eslint-config-solid'
+import { defineConfig } from 'eslint/config'
 
-### With Vite
-
-```json
-{
-  "extends": ["@josejefferson/eslint-config-solid"],
-  "ignorePatterns": ["vite.config.ts"],
-  "parserOptions": {
-    "project": "./tsconfig.app.json"
-  }
-}
+export default defineConfig([
+  eslintConfigSolid
+])
 ```

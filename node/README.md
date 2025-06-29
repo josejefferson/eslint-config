@@ -9,19 +9,22 @@ This package provides ESLint configuration for Node.js projects.
 ## Installation
 
 ```fish
-npm install -D @josejefferson/eslint-config-node
+npm install -D eslint @josejefferson/eslint-config-node
 
-yarn add -D @josejefferson/eslint-config-node
+yarn add -D eslint @josejefferson/eslint-config-node
 
-bun add -D @josejefferson/eslint-config-node
+bun add -D eslint @josejefferson/eslint-config-node
 ```
 
 ## Usage
 
-`.eslintrc.json`
+`eslint.config.mjs`
 
-```json
-{
-  "extends": ["@josejefferson/eslint-config-node"]
-}
+```js
+import eslintConfigNode from '@josejefferson/eslint-config-node'
+import { defineConfig } from 'eslint/config'
+
+export default defineConfig([
+  eslintConfigNode
+])
 ```

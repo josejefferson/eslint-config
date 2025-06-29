@@ -1,9 +1,10 @@
 {
   "name": "@josejefferson/eslint-config-node",
-  "version": "1.0.4",
+  "version": "2.0.1",
   "description": "Custom ESLint configuration for Node.js projects",
   "license": "MIT",
-  "main": "eslint.config.js",
+  "main": "./eslint.config.cjs",
+  "types": "./index.d.ts",
   "keywords": [
     "eslint",
     "eslintconfig"
@@ -20,9 +21,13 @@
     "name": "Jefferson Dantas",
     "url": "https://github.com/josejefferson"
   },
+  "peerDependencies": {
+    "eslint": ">=9.22.0"
+  },
   "dependencies": {
-    "eslint": "^8.57.1",
-    "eslint-config-prettier": "^9.1.0",
-    "prettier": "^3.4.2"
+    "eslint-config-prettier": "^10.1.5"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
   }
 }

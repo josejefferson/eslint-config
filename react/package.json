@@ -1,9 +1,10 @@
 {
   "name": "@josejefferson/eslint-config-react",
-  "version": "1.2.2",
+  "version": "2.0.1",
   "description": "Custom ESLint configuration for React projects",
   "license": "MIT",
-  "main": "eslint.config.js",
+  "main": "./eslint.config.cjs",
+  "types": "./index.d.ts",
   "keywords": [
     "eslint",
     "eslintconfig"
@@ -20,9 +21,16 @@
     "name": "Jefferson Dantas",
     "url": "https://github.com/josejefferson"
   },
+  "peerDependencies": {
+    "eslint": ">=9.22.0"
+  },
   "dependencies": {
-    "@josejefferson/eslint-config-node": "^1.0",
-    "eslint": "^8.57.1",
-    "eslint-plugin-react": "^7.37.3"
+    "@josejefferson/eslint-config-node": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
   }
 }
