@@ -36,6 +36,9 @@ module.exports = defineConfig([
       // Require function names to match the name of the variable or property to which they are assigned
       'func-name-matching': 'warn',
 
+      // Require or disallow named function expressions
+      'func-names': 'warn',
+
       // Require or disallow logical assignment operator shorthand
       'logical-assignment-operators': 'warn',
 
@@ -44,6 +47,12 @@ module.exports = defineConfig([
 
       // Disallow the use of console
       'no-console': ['warn', { allow: ['warn', 'error', 'clear'] }],
+
+      // Disallow duplicate module imports
+      'no-duplicate-imports': 'warn',
+
+      // Disallow else blocks after return statements in if statements
+      'no-else-return': 'warn',
 
       // Disallow empty character classes in regular expressions
       'no-empty': ['warn', { allowEmptyCatch: true }],
@@ -63,6 +72,9 @@ module.exports = defineConfig([
       // Disallow if statements as the only statement in else blocks
       'no-lonely-if': 'warn',
 
+      // Disallow function declarations that contain unsafe references inside loop statements
+      'no-loop-func': 'warn',
+
       // Disallow comparisons where both sides are exactly the same
       'no-self-compare': 'warn',
 
@@ -81,6 +93,12 @@ module.exports = defineConfig([
       // Disallow unnecessary computed property keys in objects and classes
       'no-useless-computed-key': 'warn',
 
+      // Disallow unnecessary concatenation of literals or template literals
+      'no-useless-concat': 'warn',
+
+      // Disallow renaming import, export, and destructured assignments to the same name
+      'no-useless-rename': 'warn',
+
       // Disallow redundant return statements
       'no-useless-return': 'warn',
 
@@ -95,6 +113,12 @@ module.exports = defineConfig([
 
       // Require const declarations for variables that are never reassigned after declared
       'prefer-const': ['warn', { destructuring: 'all' }],
+
+      // Require destructuring from arrays and/or objects
+      'prefer-destructuring': 'warn',
+
+      // Require using Error objects as Promise rejection reasons
+      'prefer-promise-reject-errors': 'warn',
 
       // Require rest parameters instead of arguments
       'prefer-rest-params': 'warn',

@@ -1,6 +1,6 @@
 {
   "name": "@josejefferson/eslint-config-next",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Custom ESLint configuration for Next.js projects",
   "license": "MIT",
   "main": "./eslint.config.cjs",
@@ -25,9 +25,9 @@
     "eslint": ">=9.22.0"
   },
   "dependencies": {
-    "@josejefferson/eslint-config-react": "^2.0.1",
-    "@josejefferson/eslint-config-typescript": "^2.0.1",
-    "@next/eslint-plugin-next": "^15.3.4"
+    "@josejefferson/eslint-config-react": "^2.1.0",
+    "@josejefferson/eslint-config-typescript": "^2.1.0",
+    "@next/eslint-plugin-next": "^15.4.2"
   },
   "devDependencies": {
     "prettier": "^3.6.2"

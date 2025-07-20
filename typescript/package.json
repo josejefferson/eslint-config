@@ -1,6 +1,6 @@
 {
   "name": "@josejefferson/eslint-config-typescript",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Custom ESLint configuration for Node.js + TypeScript projects",
   "license": "MIT",
   "main": "./eslint.config.cjs",
@@ -26,8 +26,8 @@
     "typescript": ">=5"
   },
   "dependencies": {
-    "@josejefferson/eslint-config-node": "^2.0.1",
-    "typescript-eslint": "^8.35.0"
+    "@josejefferson/eslint-config-node": "^2.1.0",
+    "typescript-eslint": "^8.37.0"
   },
   "devDependencies": {
     "prettier": "^3.6.2"

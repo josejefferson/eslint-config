@@ -1,6 +1,6 @@
 {
   "name": "@josejefferson/eslint-config-nest",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Custom ESLint configuration for NestJS projects",
   "license": "MIT",
   "main": "./eslint.config.cjs",
@@ -26,8 +26,8 @@
     "typescript": ">=5"
   },
   "dependencies": {
-    "@josejefferson/eslint-config-typescript": "^2.0.1",
-    "@typescript-eslint/utils": "^8.35.1"
+    "@josejefferson/eslint-config-typescript": "^2.1.0",
+    "@typescript-eslint/utils": "^8.37.0"
   },
   "devDependencies": {
     "prettier": "^3.6.2"
